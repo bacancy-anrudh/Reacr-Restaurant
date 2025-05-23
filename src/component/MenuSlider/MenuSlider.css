@@ -1,0 +1,140 @@
+.menu-slider-wrapper {
+    background: #fa466f;
+    border-radius: 16px;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.menu-slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.menu-slider-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu-slider-arrows {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.slider-arrow {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.5rem;
+    color: #fa466f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.slider-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.menu-slider-track {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+    padding: 1.5rem 1rem 2rem 1rem;
+    min-width: 220px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.menu-card-img-wrapper {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.menu-card-desc {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .menu-slider-track {
+        gap: 1rem;
+    }
+
+    .menu-card {
+        min-width: 180px;
+        max-width: 200px;
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+    }
+
+    .menu-card-img-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-slider-title {
+        font-size: 1.2rem;
+    }
+
+    .menu-slider-wrapper {
+        padding: 1rem 0.2rem;
+    }
+
+    .menu-card {
+        min-width: 140px;
+        max-width: 160px;
+        padding: 0.7rem 0.2rem 1rem 0.2rem;
+    }
+
+    .menu-card-img-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+}

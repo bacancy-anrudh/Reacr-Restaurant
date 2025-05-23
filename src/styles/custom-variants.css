@@ -1,0 +1,172 @@
+:root {
+    --bs-primary: #ED274B;
+    --bs-primary-hover: #FF5252;
+    --bs-secondary: #000;
+    --bs-tertiary: #f00;
+    --bs-content: #222222;
+    --bs-default: #434343;
+    --bs-gray: #D1D1D1;
+    --bs-darkBlueGray: #2c3e50;
+    --bs-white: #ffffff;
+    --bs-dark-opacity-4: rgba(0, 0, 0, 0.4);
+    --bs-dark-opacity-7: rgba(0, 0, 0, 0.7);
+    --bs-shadow: rgba(0, 0, 0, 0.1);
+    --bs-transparent: transparent;
+}
+
+/* Custom Button Variants */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: var(--bs-primary-hover);
+    border-color: var(--bs-primary-hover);
+    color: var(--bs-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.2);
+}
+
+.btn-secondary {
+    background-color: #4ECDC4;
+    border-color: #4ECDC4;
+    color: var(--bs-white);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #45B7AF;
+    border-color: #45B7AF;
+    color: var(--bs-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(78, 205, 196, 0.2);
+}
+
+/* Background Color */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Navbar Variants */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #2D3436;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* Card Variants */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Variants */
+.badge {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Alert Variants */
+.alert {
+    border: none;
+    border-radius: 10px;
+    background-color: #F8F9FA;
+    border-left: 4px solid var(--bs-primary);
+    color: #2D3436;
+}
+
+/* Form Control Variants */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #E9ECEF;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+}
+
+
+/* Product section */
+.section-categories::before,
+.section-categories::after,
+.section-product::before,
+.section-product::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+}
+
+.section-product::before {
+    top: 0;
+    left: 0;
+    background-image: url(../assets/product_before.svg);
+    background-repeat: no-repeat;
+    background-size: 158px 195px;
+    width: 160px;
+    height: 195px;
+}
+
+.section-product::after {
+    right: 209px;
+    bottom: 10px;
+    background-image: url(../assets/product_after.svg);
+    background-repeat: no-repeat;
+    background-size: 307px 292px;
+    width: 307px;
+    height: 292px;
+}
+
+.section-categories::before {
+    top: 0;
+    left: 0;
+    background-image: url(../assets/product_before.svg);
+    background-repeat: no-repeat;
+    background-size: 158px 195px;
+    width: 160px;
+    height: 195px;
+}
+
+.section-categories::after {
+    right: 0px;
+    bottom: 10px;
+    background-image: url(../assets/product_after.svg);
+    background-repeat: no-repeat;
+    background-size: 307px 292px;
+    width: 307px;
+    height: 292px;
+}
