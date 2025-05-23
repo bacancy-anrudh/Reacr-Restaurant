@@ -2,8 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Banner from '../component/Banner';
 import BannerSlider from '../component/BannerSlider';
-import ProductSlider from '../component/ProductSlider';
 import Title from '../component/Title';
+import HorizontalContentImages from '../component/HorizontalContentImages';
+import coffeeHouse from '../assets/coffe_house.jpg';
+import qualityKava from '../assets/quality_kava.jpg';
+import qualityKava02 from '../assets/quality_kava_2.jpg';
 
 const Home = () => {
   const sliderSlides = [
@@ -27,73 +30,6 @@ const Home = () => {
       image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3",
       buttonText: "Book Now",
       buttonLink: "/events"
-    }
-  ];
-
-  const products = [
-    {
-      title: "Beef Fried",
-      description: "Handmade pasta with our secret sauce recipe.",
-      image: "https://images.unsplash.com/photo-1669907366240-365f02ceaf44",
-      rating: 4.5,
-      reviewCount: 128,
-      price: 24.99,
-      oldPrice: 29.99,
-      link: "/menu/pasta"
-    },
-    {
-      title: "Hamburger",
-      description: "Fresh Atlantic salmon with seasonal vegetables.",
-      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
-      rating: 4.8,
-      reviewCount: 95,
-      price: 32.99,
-      link: "/menu/seafood"
-    },
-    {
-      title: "Apple Pie",
-      description: "Angus beef patty with special sauce.",
-      image: "https://plus.unsplash.com/premium_photo-1694336203192-c9e7f2891b95",
-      rating: 4.3,
-      reviewCount: 156,
-      price: 18.99,
-      link: "/menu/burgers"
-    },
-    {
-      title: "Buffalo Wings",
-      description: "Rich chocolate cake with ganache.",
-      image: "https://images.unsplash.com/photo-1608039755401-742074f0548d",
-      rating: 4.7,
-      reviewCount: 82,
-      price: 12.99,
-      link: "/menu/desserts"
-    },
-    {
-      title: "Macaroni and Cheese",
-      description: "A creamy, comforting dish made from cooked.",
-      image: "https://plus.unsplash.com/premium_photo-1661677825991-caa232fea9da",
-      rating: 4.7,
-      reviewCount: 82,
-      price: 12.99,
-      link: "/menu/desserts"
-    },
-    {
-      title: "Beef",
-      description: "Discover our menu and order delivery.",
-      image: "https://images.unsplash.com/photo-1690983322025-aab4f95a0269",
-      rating: 4.7,
-      reviewCount: 82,
-      price: 12.99,
-      link: "/menu/desserts"
-    },
-    {
-      title: "Salmon",
-      description: "Get the freshest salmon and ocean trout.",
-      image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2",
-      rating: 4.7,
-      reviewCount: 82,
-      price: 12.99,
-      link: "/menu/desserts"
     }
   ];
 
@@ -134,7 +70,7 @@ const Home = () => {
                 subtitle="Discover our carefully crafted dishes made with the finest ingredients"
                 image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
                 variant="secondary"
-                buttonText="View Menu"
+                buttonText="Read More"
                 buttonLink="/menu"
                 height="medium"
                 className="h-100"
@@ -155,14 +91,48 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <section className="bg-primary section-spacing section-product position-relative">
-        <Container fluid className='position-relative z-1'>
-          <Row>
-            <Col md={12}>
-              <h2 className="section-title text-center text-white mb-4">Featured Dishes</h2>
-              <ProductSlider products={products} />
-            </Col>
-          </Row>
+      <section className='section-spacing bg-dark'>
+        <Container>
+          <HorizontalContentImages
+            subtitle="ABOUT US"
+            title="We Invite You to Visit Our Coffee House"
+            description="Step into our cozy coffee house and experience the perfect blend of rich aromas, warm ambiance, and handcrafted beverages. Whether you're here to catch up with friends, get some work done, or simply relax, we have the perfect cup waiting for you."
+            buttonText="Read More"
+            buttonLink="/menu"
+            imageSrc={coffeeHouse}
+            imageAlt="About Us"
+            reverse={false}
+          />
+          <HorizontalContentImages
+            subtitle="COFFEE MENU"
+            title="Quality Kava Beans"
+            description="Our kava beans are carefully sourced and expertly prepared to deliver a smooth, calming experience in every cup. Grown in the finest regions and selected for their purity and potency, they bring you the true essence of traditional relaxation."
+            buttonText="Read More"
+            buttonLink="/menu"
+            imageSrc={qualityKava}
+            imageAlt="Coffee Menu"
+            reverse={true}
+          />
+          <HorizontalContentImages
+            subtitle="OUR TEAM"
+            title="Use the Tips & Recipes of Our Barista"
+            description="Discover expert tips and signature recipes straight from our barista to elevate your coffee-making skills at home. From brewing techniques to creative drink ideas, we’ll help you craft café-quality coffee every time."
+            buttonText="Read More"
+            buttonLink="/menu"
+            imageSrc={qualityKava02}
+            imageAlt="Our Team"
+            reverse={false}
+          />
+          <HorizontalContentImages
+            subtitle="Fast Food"
+            title="Unraveling Fast Food Delights"
+            description="Take a flavorful journey through the world of fast food—where bold tastes, quick bites, and culinary creativity come together. Explore the classics you love and the twists you didn’t expect."
+            buttonText="Read More"
+            buttonLink="/menu"
+            imageSrc="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
+            imageAlt="Fast Food"
+            reverse={true}
+          />
         </Container>
       </section>
     </>

@@ -6,23 +6,30 @@ import './ProductSlider.css';
 
 const ProductSlider = ({ products }) => {
   const settings = {
-    dots: true,
-    margin:20,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 1,
-    dots: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
