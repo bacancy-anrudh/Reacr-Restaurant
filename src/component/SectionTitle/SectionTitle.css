@@ -4,6 +4,7 @@
     margin-bottom: 1.5rem;
     font-weight: 500;
     position: relative;
+    text-transform: uppercase;
 }
 
 .title {
@@ -17,8 +18,9 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 60px;
+    width: 48px;
     height: 3px;
+    border-radius: 5px;
 }
 
 .section-description {

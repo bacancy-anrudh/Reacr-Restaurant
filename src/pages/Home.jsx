@@ -4,6 +4,8 @@ import Banner from '../component/Banner';
 import BannerSlider from '../component/BannerSlider';
 import Title from '../component/Title';
 import HorizontalContentImages from '../component/HorizontalContentImages';
+import SectionTitle from '../component/SectionTitle';
+import ServiceContent from '../component/ServiceContent'
 import coffeeHouse from '../assets/coffe_house.jpg';
 import qualityKava from '../assets/quality_kava.jpg';
 import qualityKava02 from '../assets/quality_kava_2.jpg';
@@ -133,6 +135,27 @@ const Home = () => {
             imageAlt="Fast Food"
             reverse={true}
           />
+        </Container>
+      </section>
+      <section className='section-spacing bg-dark'>
+        <Container>
+          <Row>
+            <div className='col-md-6 mx-auto'>
+                <SectionTitle
+                  subtitle="FEATURES"
+                  title="Why people choose us?"
+                  description="People choose us for fresh ingredients, flavorful dishes, and a warm, welcoming atmosphere that feels just like home."
+                />
+            </div>
+          </Row>
+          <Row>
+            <ServiceContent 
+              // imageSrc={coffeeHouse}
+              imageAlt="About Us"
+              title="We Invite You to Visit Our Coffee House"
+              description="Step into our cozy coffee house and experience the perfect blend of rich aromas, warm ambiance, and handcrafted beverages. Whether you're here to catch up with friends, get some work done, or simply relax, we have the perfect cup waiting for you."
+            />
+          </Row>
         </Container>
       </section>
     </>

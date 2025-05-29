@@ -20,7 +20,7 @@ const HorizontalContentImages = ({
         <div className="section-content text-white">
           <h2 className="title-category">
             {subtitle}
-            <span className="title-underline"></span>
+            <span className="title-underline bg-primary-hover"></span>
           </h2>
           <h3 className='title'>{title}</h3>
           <p className="section-description">{description}</p>

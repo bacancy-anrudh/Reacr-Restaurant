@@ -6,8 +6,9 @@
     --bs-content: #222222;
     --bs-default: #434343;
     --bs-gray: #D1D1D1;
-    --bs-darkBlueGray: #2c3e50;
     --bs-white: #ffffff;
+    --bs-dark: #0A1316;
+    --bs-darkBlueGray: #2c3e50;
     --bs-dark-opacity-4: rgba(0, 0, 0, 0.4);
     --bs-dark-opacity-7: rgba(0, 0, 0, 0.7);
     --bs-shadow: rgba(0, 0, 0, 0.1);
@@ -25,9 +26,10 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
+.btn-primary:focus-visible,
 .btn-primary.active {
-    background-color: var(--bs-primary-hover);
-    border-color: var(--bs-primary-hover);
+    background-color: var(--bs-primary-hover) !important;
+    border-color: var(--bs-primary-hover) !important;
     color: var(--bs-white);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 107, 107, 0.2);
@@ -40,7 +42,11 @@
     transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:focus-visible,
+.btn-secondary.active {
     background-color: #45B7AF;
     border-color: #45B7AF;
     color: var(--bs-white);
@@ -51,6 +57,14 @@
 /* Background Color */
 .bg-primary {
     background-color: var(--bs-primary) !important;
+}
+
+.bg-primary-hover {
+    background-color: var(--bs-primary-hover) !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
 }
 
 /* Navbar Variants */
