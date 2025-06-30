@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
+import Footer from '../component/Footer';
 
 const Contact = () => {
   return (
@@ -13,6 +14,7 @@ const Contact = () => {
       <div className="container py-5">
         <p>Contact will be displayed here</p>
       </div>
+      <Footer />
     </>
   );
 };

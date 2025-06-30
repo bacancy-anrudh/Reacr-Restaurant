@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import ProductSlider from '../component/ProductSlider';
+import Footer from '../component/Footer';
 
 const Shop = () => {
   const products = [
@@ -89,6 +90,7 @@ const Shop = () => {
           </Row>
         </Container>
       </section>
+      <Footer />
     </>
   );
 };

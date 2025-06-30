@@ -142,6 +142,10 @@
     }
 }
 
+.slick-slide img.arrow-img {
+    display: inline-flex;
+}
+
 /* Responsive styles */
 @media (max-width: 992px) {
 

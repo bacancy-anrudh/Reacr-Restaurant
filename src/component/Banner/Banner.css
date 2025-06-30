@@ -49,8 +49,8 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.8));
+            rgba(118, 118, 118, 0.80),
+            rgba(0, 0, 0, 0.88));
 }
 
 .banner-wrapper.light .banner-overlay {
@@ -119,4 +119,16 @@
     .banner-subtitle {
         font-size: 1rem;
     }
+}
+
+.arrow-img {
+    width: 0.75em;
+    height: 0.75em;
+    vertical-align: middle;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(7%) hue-rotate(33deg) brightness(103%) contrast(100%);
+}
+
+.banner-btn-arrow:hover .arrow-img {
+    transform: translateX(6px);
 }

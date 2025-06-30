@@ -1,0 +1,18 @@
+.footer-social .nav-link {
+    min-width: 32px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--bs-primary-hover);
+}
+
+.footer-social .nav-link svg {
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    fill: var(--bs-white);
+}
+
+.footer-links .nav-link {
+    color: var(--bs-description);
+    font-size: 16px;
+}

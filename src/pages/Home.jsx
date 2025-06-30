@@ -9,6 +9,8 @@ import ServiceContent from '../component/ServiceContent'
 import coffeeHouse from '../assets/coffe_house.jpg';
 import qualityKava from '../assets/quality_kava.jpg';
 import qualityKava02 from '../assets/quality_kava_2.jpg';
+import Testimonials from '../component/Testimonials';
+import Footer from '../component/Footer';
 
 const Home = () => {
   const sliderSlides = [
@@ -39,7 +41,7 @@ const Home = () => {
     <>
       <Title title="Home" />
       <BannerSlider slides={sliderSlides} />
-      <section className="section-spacing position-relative section-categories">
+      <section className="section-spacing bg-gradient-darkLight position-relative section-categories">
         <Container className='position-relative z-1'>
           <Row className="g-4">
             <div className="col-md-5">
@@ -93,6 +95,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      
       <section className='section-spacing bg-dark'>
         <Container>
           <HorizontalContentImages
@@ -118,7 +121,7 @@ const Home = () => {
           <HorizontalContentImages
             subtitle="OUR TEAM"
             title="Use the Tips & Recipes of Our Barista"
-            description="Discover expert tips and signature recipes straight from our barista to elevate your coffee-making skills at home. From brewing techniques to creative drink ideas, we’ll help you craft café-quality coffee every time."
+            description="Discover expert tips and signature recipes straight from our barista to elevate your coffee-making skills at home. From brewing techniques to creative drink ideas, we'll help you craft café-quality coffee every time."
             buttonText="Read More"
             buttonLink="/menu"
             imageSrc={qualityKava02}
@@ -128,7 +131,7 @@ const Home = () => {
           <HorizontalContentImages
             subtitle="Fast Food"
             title="Unraveling Fast Food Delights"
-            description="Take a flavorful journey through the world of fast food—where bold tastes, quick bites, and culinary creativity come together. Explore the classics you love and the twists you didn’t expect."
+            description="Take a flavorful journey through the world of fast food—where bold tastes, quick bites, and culinary creativity come together. Explore the classics you love and the twists you didn't expect."
             buttonText="Read More"
             buttonLink="/menu"
             imageSrc="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
@@ -137,10 +140,11 @@ const Home = () => {
           />
         </Container>
       </section>
-      <section className='section-spacing bg-dark'>
+
+      <section className='section-spacing bg-gradient-darkLight'>
         <Container>
           <Row>
-            <div className='col-md-6 mx-auto'>
+            <div className='col-md-6 mx-auto text-white'>
                 <SectionTitle
                   subtitle="FEATURES"
                   title="Why people choose us?"
@@ -148,16 +152,73 @@ const Home = () => {
                 />
             </div>
           </Row>
-          <Row>
-            <ServiceContent 
-              // imageSrc={coffeeHouse}
-              imageAlt="About Us"
-              title="We Invite You to Visit Our Coffee House"
-              description="Step into our cozy coffee house and experience the perfect blend of rich aromas, warm ambiance, and handcrafted beverages. Whether you're here to catch up with friends, get some work done, or simply relax, we have the perfect cup waiting for you."
-            />
+          <Row className='gy-4'>
+            <div className='col-lg-4'>
+              <ServiceContent
+                title="Menu For Every Taste"
+                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
+              />
+            </div>
+            <div className='col-lg-4'>
+              <ServiceContent
+                title="Always Qulity Beans"
+                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
+              />
+            </div>
+            <div className='col-lg-4'>
+              <ServiceContent
+                title="Experienced Barista"
+                description="Lorem ipsum dolor sit amet consectetur. Felis eget sit sit scelerisque vestibulum. Urna faucibus amet massa lacus lorem."
+              />
+            </div>
           </Row>
         </Container>
       </section>
+
+      <section className='section-spacing bg-dark position-relative section-categories'>
+        <Container className='position-relative z-1'>
+          <Row>
+            <div className='col-md-8 mx-auto text-white'>
+              <SectionTitle
+                subtitle="Testimonials"
+                title="What Our Customers Say"
+                description="Hear from our happy guests about their experiences at our restaurant."
+              />
+            </div>
+          </Row>
+          <Row>
+            <div className='col-xl-11 mx-auto'>
+              <Testimonials
+                slides={[
+                  {
+                    userPic: 'https://randomuser.me/api/portraits/men/32.jpg',
+                    userName: 'John Doe',
+                    userDesignation: 'Food Blogger',
+                    description: 'Absolutely loved the ambiance and the food! The staff was friendly and the coffee was the best I have ever had.',
+                    rating: 4.5
+                  },
+                  {
+                    userPic: 'https://randomuser.me/api/portraits/women/44.jpg',
+                    userName: 'Jane Smith',
+                    userDesignation: 'Chef',
+                    description: 'A wonderful place for family dinners. The desserts are to die for and the service is top-notch.',
+                    rating: 5
+                  },
+                  {
+                    userPic: 'https://randomuser.me/api/portraits/men/65.jpg',
+                    userName: 'Michael Lee',
+                    userDesignation: 'Coffee Enthusiast',
+                    description: 'The kava beans here are of the highest quality. I always leave with a smile on my face.',
+                    rating: 4
+                  }
+                ]}
+              />
+            </div>
+          </Row>
+        </Container>
+      </section>
+      
+      <Footer />
     </>
   );
 };

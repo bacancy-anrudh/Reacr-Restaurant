@@ -11,7 +11,7 @@
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     position: relative;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .title-underline {
@@ -21,13 +21,6 @@
     width: 48px;
     height: 3px;
     border-radius: 5px;
-}
-
-.section-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #f0f0f0;
-    margin-bottom: 2rem;
 }
 
 .section-image img {

@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './ProductSlider.css';
+import angleRight from '../../assets/angle-right.svg';
 
 const ProductSlider = ({ products }) => {
   const settings = {
@@ -77,8 +78,13 @@ const ProductSlider = ({ products }) => {
                   <span className="old-price">${product.oldPrice}</span>
                 )}
               </div>
-              <Link to={product.link} className="btn btn-primary rounded-pill py-1 px-3 view-more">
+              <Link to={product.link} className="btn btn-primary rounded-pill py-1 px-3 view-more banner-btn-arrow">
                 View More
+                <img 
+                  src={angleRight} 
+                  alt="Right Arrow" 
+                  className="arrow-img ms-2"
+                />
               </Link>
             </div>
           </div>

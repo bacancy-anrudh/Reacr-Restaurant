@@ -8,6 +8,7 @@
     --bs-gray: #D1D1D1;
     --bs-white: #ffffff;
     --bs-dark: #0A1316;
+    --bs-description: #797B78;
     --bs-darkBlueGray: #2c3e50;
     --bs-dark-opacity-4: rgba(0, 0, 0, 0.4);
     --bs-dark-opacity-7: rgba(0, 0, 0, 0.7);
@@ -65,6 +66,10 @@
 
 .bg-dark {
     background-color: var(--bs-dark) !important;
+}
+
+.bg-gradient-darkLight {
+    background: linear-gradient(149.68deg, #000000 -1.04%, #252525 116.65%);
 }
 
 /* Navbar Variants */
@@ -183,4 +188,17 @@
     background-size: 307px 292px;
     width: 307px;
     height: 292px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--bs-description);
+    margin-bottom: 2rem;
+}
+
+.border-gradient {
+    background: linear-gradient(var(--bs-dark), var(--bs-dark)) padding-box, linear-gradient(to top, var(--bs-primary-hover), #ff8800) border-box;
+    border: 2px solid transparent;
+    box-shadow: 0px 3px 16px 0px rgba(237, 39, 75, 0.2);
 }

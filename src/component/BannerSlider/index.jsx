@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { Container } from 'react-bootstrap';
 import './BannerSlider.css';
+import angleRight from '../../assets/angle-right.svg';
 
 const BannerSlider = ({ slides }) => {
   const settings = {
@@ -38,9 +39,14 @@ const BannerSlider = ({ slides }) => {
                   {slide.buttonText && (
                     <a 
                       href={slide.buttonLink} 
-                      className="banner-slide-button"
+                      className="banner-slide-button banner-btn-arrow"
                     >
                       {slide.buttonText}
+                      <img 
+                        src={angleRight} 
+                        alt="Right Arrow" 
+                        className="arrow-img ms-2"
+                      />
                     </a>
                   )}
                 </div>

@@ -4,25 +4,14 @@ import { Row } from 'react-bootstrap';
 
 const ServiceContent = ({
   title,
-  subtitle,
   description,
-  imageSrc,
-  imageAlt,
   className = '',
 }) => {
   return (
-    <Row className={`${className}`}>
-      <div className='col-lg-4'>
-        <div className="section-content text-white text-center">
-          <img src={imageSrc} alt={imageAlt} className="img-fluid rounded-4 w-100 h-100 object-fit-cover" />
-          <h2 className="title-category">
-            {subtitle}
-          </h2>
-          <h3 className='title'>{title}</h3>
-          <p className="section-description">{description}</p>
-        </div>
+      <div className="border-gradient rounded-5 text-white text-center px-3 px-lg-4 py-4 py-lg-5">
+        <h3 className='fw-bold mb-3'>{title}</h3>
+        <p className="section-description mb-0">{description}</p>
       </div>
-    </Row>
   );
 };
 

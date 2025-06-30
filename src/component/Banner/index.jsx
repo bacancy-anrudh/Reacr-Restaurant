@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Banner.css';
+import angleRight from '../../assets/angle-right.svg';
 
 const Banner = ({ 
   title, 
@@ -20,7 +21,7 @@ const Banner = ({
   };
 
   return (
-    <div className={`banner-wrapper rounded-4 ${height} ${variant} ${className}`} style={bannerStyle}>
+    <div className={`banner-wrapper rounded-5 ${height} ${variant} ${className}`} style={bannerStyle}>
       {overlay && <div className="banner-overlay" />}
         <div className={`${align === 'center' ? 'mx-auto' : 'col-12 d-flex flex-column justify-content-between h-100'}`}>
             <div className="banner-content">
@@ -32,9 +33,14 @@ const Banner = ({
                     <Button
                         href={buttonLink} 
                         variant={variant === 'primary' ? 'dark' : 'primary'}
-                        className='rounded-pill px-3 px-lg-4'
+                        className='rounded-pill px-3 px-lg-4 banner-btn-arrow'
                     >
                         {buttonText}
+                        <img 
+                            src={angleRight} 
+                            alt="Right Arrow" 
+                            className="arrow-img ms-2"
+                        />
                     </Button>
                 )}
             </div>

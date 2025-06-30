@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
+import Footer from '../component/Footer';
 
 const Order = () => {
   return (
@@ -13,6 +14,7 @@ const Order = () => {
       <div className="container py-5">
         <p>Order form will go here</p>
       </div>
+      <Footer />
     </>
   );
 };

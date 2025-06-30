@@ -3,7 +3,7 @@ import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
 
-const ViewCard = () => {
+const TermsCondition = () => {
   return (
     <>
       <Title title="Card" />
@@ -12,11 +12,11 @@ const ViewCard = () => {
         subtitle="Latest news, recipes, and stories from our kitchen"
       />
       <div className="container py-5">
-        <p>Blog posts will be displayed here</p>
+        <p>Terms Condition here</p>
       </div>
       <Footer />
     </>
   );
 };
 
-export default ViewCard; 
+export default TermsCondition; 
