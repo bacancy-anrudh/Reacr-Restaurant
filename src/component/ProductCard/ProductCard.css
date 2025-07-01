@@ -1,0 +1,31 @@
+.product-card-custom {
+    background: #181f25;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s;
+}
+
+.product-card-custom:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+.product-card-title {
+    color: var(--bs-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.product-card-details {
+    color: #bdbdbd;
+    font-size: 0.95rem;
+}
+
+.product-card-price {
+    color: var(--bs-primary);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.product-card-oldprice {
+    text-decoration: line-through;
+}

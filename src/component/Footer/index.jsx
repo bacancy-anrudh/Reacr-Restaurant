@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import HeaderLogo from '../../assets/logo.svg';
@@ -49,10 +49,6 @@ const Footer = () => (
               <Nav.Link as={NavLink} to="tel:+1257 6541120" className='px-0'>+1257 6541120</Nav.Link>
             </li>
           </Nav>
-          <Form className="d-flex gap-2">
-            <Form.Control type="email" placeholder="Email" className="rounded-2" style={{minWidth: 0}} />
-            <Button type="submit" className="rounded-2 px-4" style={{background: '#F2994A', border: 'none'}}>Subscribe</Button>
-          </Form>
         </Col>
       </Row>
       <hr className="my-4" style={{borderColor: '#333', opacity: 0.2}} />

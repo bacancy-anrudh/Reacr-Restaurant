@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Banner from '../component/Banner';
 import BannerSlider from '../component/BannerSlider';
 import Title from '../component/Title';
@@ -10,6 +10,7 @@ import coffeeHouse from '../assets/coffe_house.jpg';
 import qualityKava from '../assets/quality_kava.jpg';
 import qualityKava02 from '../assets/quality_kava_2.jpg';
 import Testimonials from '../component/Testimonials';
+import ProductCard from '../component/ProductCard';
 import Footer from '../component/Footer';
 
 const Home = () => {
@@ -144,7 +145,7 @@ const Home = () => {
       <section className='section-spacing bg-gradient-darkLight'>
         <Container>
           <Row>
-            <div className='col-md-6 mx-auto text-white'>
+            <div className='col-md-6 mx-auto text-white text-center'>
                 <SectionTitle
                   subtitle="FEATURES"
                   title="Why people choose us?"
@@ -178,7 +179,7 @@ const Home = () => {
       <section className='section-spacing bg-dark position-relative section-categories'>
         <Container className='position-relative z-1'>
           <Row>
-            <div className='col-md-8 mx-auto text-white'>
+            <div className='col-md-8 mx-auto text-white text-center'>
               <SectionTitle
                 subtitle="Testimonials"
                 title="What Our Customers Say"
@@ -218,6 +219,72 @@ const Home = () => {
         </Container>
       </section>
       
+      <section className='section-spacing bg-gradient-darkLight position-relative section-categories'>
+        <Container className='position-relative z-1'>
+          <Row>
+            <div className='col-md-8 mx-auto text-white text-center'>
+              <SectionTitle
+                subtitle="Recent Launch Items"
+                title="Explore Our Foods"
+                description="Hear from our happy guests about their experiences at our restaurant."
+              />
+            </div>
+          </Row>
+          <Row className='gy-4'>
+            <div className="col-xl-4">
+              <ProductCard
+                image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
+                title="Raspberry French Toast"
+                details="Time: 10 - 15 Minutes | Serves: 1"
+                price="12.50"
+                oldPrice="13.20"
+                buttonText="Order Now"
+                onButtonClick={() => { /* handle order */ }}
+              />
+            </div>
+            <div className="col-xl-4">
+              <ProductCard
+                image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
+                title="Raspberry French Toast"
+                details="Time: 10 - 15 Minutes | Serves: 1"
+                price="12.50"
+                oldPrice="13.20"
+                buttonText="Order Now"
+                onButtonClick={() => { /* handle order */ }}
+              />
+            </div>
+            <div className="col-xl-4">
+              <ProductCard
+                image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3"
+                title="Raspberry French Toast"
+                details="Time: 10 - 15 Minutes | Serves: 1"
+                price="12.50"
+                oldPrice="13.20"
+                buttonText="Order Now"
+                onButtonClick={() => { /* handle order */ }}
+              />
+            </div>
+          </Row>
+        </Container>
+      </section>
+      <section className='section-spacing bg-dark'>
+        <Container className='position-relative z-1'>
+          <Row>
+            <div className='col-md-8 mx-auto text-white text-center'>
+              <SectionTitle
+                subtitle="NewsLetter"
+                title="Subscribe Our Newsletter"
+                description="Hear from our happy guests about their experiences at our restaurant."
+              />
+
+              <Form className="d-flex gap-2">
+                <Form.Control type="email" placeholder="Email" className="rounded-2" style={{minWidth: 0}} />
+                <Button type="submit" className="rounded-2 px-4" style={{background: '#F2994A', border: 'none'}}>Subscribe</Button>
+              </Form>
+            </div>
+          </Row>
+        </Container>
+      </section>
       <Footer />
     </>
   );
