@@ -1,22 +1,22 @@
 import React from 'react';
+import { Container, Breadcrumb } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import Footer from '../component/Footer';
 
-const Order = () => {
-  return (
-    <>
-      <Title title="Order" />
-      <PageTitle 
-        title="Place Your Order" 
-        subtitle="Order your favorite dishes online and enjoy them at home"
-      />
-      <div className="container py-5">
-        <p>Order form will go here</p>
-      </div>
-      <Footer />
-    </>
-  );
-};
+const Order = () => (
+  <>
+    <section className="section-spacing bg-dark">
+      <Container>
+        <Breadcrumb className="mb-3">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Order Delivery</Breadcrumb.Item>
+        </Breadcrumb>
+        <h1 className="display-4 text-white fw-bold mb-2">Order Delivery</h1>
+      </Container>
+    </section>
+    <Footer />
+  </>
+);
 
 export default Order; 

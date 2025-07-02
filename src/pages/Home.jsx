@@ -26,7 +26,7 @@ const Home = () => {
       title: "Special Offers",
       subtitle: "Enjoy our seasonal menu with special discounts and promotions",
       image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3",
-      buttonText: "Learn More",
+      buttonText: "Read More",
       buttonLink: "/offers"
     },
     {
@@ -44,7 +44,7 @@ const Home = () => {
       <BannerSlider slides={sliderSlides} />
       <section className="section-spacing bg-gradient-darkLight position-relative section-categories">
         <Container className='position-relative z-1'>
-          <Row className="g-4">
+          <Row className="gx-3 gx-md-4 gy-4">
             <div className="col-md-5">
               <Banner
                 title="Reservations"
@@ -63,7 +63,7 @@ const Home = () => {
                 subtitle="Host your special occasions in our elegant venue"
                 image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3"
                 variant="secondary"
-                buttonText="Learn More"
+                buttonText="Read More"
                 buttonLink="/events"
                 height="medium"
                 className="h-100"
@@ -87,7 +87,7 @@ const Home = () => {
                 subtitle="Let us cater your next event with our premium catering services"
                 image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3"
                 variant="dark"
-                buttonText="Learn More"
+                buttonText="Read More"
                 buttonLink="/catering"
                 height="medium"
                 className="h-100"
@@ -277,9 +277,9 @@ const Home = () => {
                 description="Hear from our happy guests about their experiences at our restaurant."
               />
 
-              <Form className="d-flex gap-2">
-                <Form.Control type="email" placeholder="Email" className="rounded-2" style={{minWidth: 0}} />
-                <Button type="submit" className="rounded-2 px-4" style={{background: '#F2994A', border: 'none'}}>Subscribe</Button>
+              <Form className="d-flex gap-0">
+                <Form.Control type="email" placeholder="Type here..." className="rounded-start-2 rounded-end-0" />
+                <Button type="submit" className="btn btn-primary rounded-start-0 px-4">Subscribe</Button>
               </Form>
             </div>
           </Row>

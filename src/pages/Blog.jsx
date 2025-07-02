@@ -1,20 +1,21 @@
 import React from 'react';
+import { Container, Breadcrumb } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
-
-const Blog = () => {
-  return (
-    <>
-      <Title title="Blog" />
-      <PageTitle 
-        title="Our Blog" 
-        subtitle="Latest news, recipes, and stories from our kitchen"
-      />
-      <div className="container py-5">
-        <p>Blog posts will be displayed here</p>
-    </div>
-    </>
-  );
-};
+import Footer from '../component/Footer';
+const Blog = () => (
+  <>
+    <section className="section-spacing bg-dark">
+      <Container>
+        <Breadcrumb className="mb-3">
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Blog</Breadcrumb.Item>
+        </Breadcrumb>
+        <h1 className="display-4 text-white fw-bold mb-2">Blog</h1>
+      </Container>
+    </section>
+    <Footer />
+  </>
+);
 
 export default Blog; 

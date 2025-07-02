@@ -1,9 +1,21 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Breadcrumb } from 'react-bootstrap';
 import PageTitle from '../component/PageTitle';
 import Title from '../component/Title';
 import ProductSlider from '../component/ProductSlider';
 import Footer from '../component/Footer';
+
+const ShopHero = () => (
+  <section className="bg-primary bg-gradient py-5 mb-4">
+    <Container>
+      <Breadcrumb className="mb-3">
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item active>Shop</Breadcrumb.Item>
+      </Breadcrumb>
+      <h1 className="display-4 text-white fw-bold mb-2">Shop</h1>
+    </Container>
+  </section>
+);
 
 const Shop = () => {
   const products = [

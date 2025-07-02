@@ -39,9 +39,9 @@ const BannerSlider = ({ slides }) => {
                   {slide.buttonText && (
                     <a 
                       href={slide.buttonLink} 
-                      className="banner-slide-button banner-btn-arrow"
+                      className="rounded-pill px-3 px-lg-4 banner-btn-arrow btn btn-primary"
                     >
-                      {slide.buttonText}
+                      <span>{slide.buttonText}</span>
                       <img 
                         src={angleRight} 
                         alt="Right Arrow" 

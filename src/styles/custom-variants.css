@@ -2,7 +2,7 @@
     --bs-primary: #ED274B;
     --bs-primary-hover: #FF5252;
     --bs-secondary: #000;
-    --bs-tertiary: #f00;
+    --bs-tertiary: #e18b0b;
     --bs-content: #222222;
     --bs-default: #434343;
     --bs-gray: #D1D1D1;
@@ -55,6 +55,32 @@
     box-shadow: 0 4px 8px rgba(78, 205, 196, 0.2);
 }
 
+.btn-tertiary {
+    background-color: var(--bs-tertiary);
+    border-color: var(--bs-tertiary);
+    color: var(--bs-white);
+    transition: all 0.3s ease;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus,
+.btn-tertiary:active,
+.btn-tertiary:focus-visible,
+.btn-tertiary.active {
+    background-color: var(--bs-tertiary) !important;
+    border-color: var(--bs-tertiary) !important;
+    color: var(--bs-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.2);
+}
+
+@media (min-width: 1200px) {
+    .btn {
+        padding: 8px 25px;
+        font-size: 1.25rem;
+    }
+}
+
 /* Background Color */
 .bg-primary {
     background-color: var(--bs-primary) !important;
@@ -75,6 +101,10 @@
 /* Text Colors */
 .text-default {
     color: var(--bs-description) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
 }
 
 /* Navbar Variants */
@@ -197,7 +227,7 @@
 
 .section-description {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--bs-description);
     margin-bottom: 2rem;
 }
@@ -206,4 +236,60 @@
     background: linear-gradient(var(--bs-dark), var(--bs-dark)) padding-box, linear-gradient(to top, var(--bs-primary-hover), #ff8800) border-box;
     border: 2px solid transparent;
     box-shadow: 0px 3px 16px 0px rgba(237, 39, 75, 0.2);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-weight: 700;
+}
+
+.title-category {
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+}
+
+.section-image img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-desc,
+p,
+.p {
+    font-size: 1rem;
+    color: var(--bs-description);
+}
+
+@media (min-width: 1200px) {
+    .section-description {
+        font-size: 1.35rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-category {
+        font-size: 1.5em;
+    }
+
+    .footer-desc,
+    p,
+    .p {
+        font-size: 1.25rem;
+    }
 }

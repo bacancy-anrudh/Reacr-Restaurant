@@ -1,31 +1,38 @@
 .product-card-custom {
-    background: #181f25;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.2s;
-}
-
-.product-card-custom:hover {
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .product-card-title {
-    color: var(--bs-primary);
-    font-size: 1.1rem;
+    font-size: 1.75rem;
     font-weight: 700;
+    color: var(--bs-tertiary);
 }
 
 .product-card-details {
-    color: #bdbdbd;
     font-size: 0.95rem;
+    color: var(--bs-gray);
 }
 
-.product-card-price {
-    color: var(--bs-primary);
+.product-card-prices {
     font-size: 1.15rem;
     font-weight: 700;
+    color: var(--bs-tertiary);
 }
 
 .product-card-oldprice {
     text-decoration: line-through;
+}
+
+@media (min-width:1200px) {
+    .product-card-title {
+        font-size: 2rem;
+    }
+
+    .product-card-details {
+        font-size: 1.25rem;
+    }
+
+    .product-card-prices {
+        font-size: 1.35rem;
+    }
 }

@@ -26,7 +26,7 @@ const Banner = ({
         <div className={`${align === 'center' ? 'mx-auto' : 'col-12 d-flex flex-column justify-content-between h-100'}`}>
             <div className="banner-content">
                 {title && <h2 className="banner-title">{title}</h2>}
-                {subtitle && <p className="banner-subtitle">{subtitle}</p>}
+                {subtitle && <p className="banner-subtitle text-white">{subtitle}</p>}
             </div>
             <div className="banner-content">
                 {buttonText && (
